@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+<html style="background : black;">
+    <style>
+        body{
+  background: linear-gradient(#0168f8, #a200f7);
+}
+h1{
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  font-size: 10rem;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  min-height: calc(100vh - 16px);
+  position: relative;
+  color: #000;
+}
+
+h1:before{
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(#0168f8, #a200f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100% 90%;
+  line-height: 0.9;
+  clip-path: ellipse(120px 120px at -2.54% -9.25%);
+  animation: swing 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes swing{
+  0%{
+     -webkit-clip-path: ellipse(120px 120px at -2.54% -9.25%)
+    clip-path: ellipse(120px 120px at -2.54% -9.25%)
+  }
+  50%{
+    -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
+    clip-path: ellipse(120px 120px at 49.66% 64.36%);
+
+  }
+  100%{
+     -webkit-clip-path: ellipse(120px 120px at 102.62% -1.61%;);
+    clip-path: ellipse(120px 120px at 102.62% -1.61%);
+  }
+}
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+          font-family: 'Fredoka One', cursive;
+        }
+        
+        .top-left {
+          position: absolute;
+          top: 8px;
+          left: 16px;
+        }
+        
+        .top-right {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          font-family: 'Fredoka One', cursive;
+        }
+        
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+        }
+        
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: 'Fredoka One', cursive;
+          font-size: 60px;
+        }
+
+        button {
+          font-family: 'Fredoka One', cursive;
+          text-decoration: none;
+          font-size: 25px;
+        }
+
+        a {
+          text-decoration: none;
+          margin: 3px;
+          font-size: 25px;
+        }
+        </style>
+<body>
+    <div class="container">
+      <img src="anime.gif" alt="Snow" style="width:100%;"/>
+      <div class="bottom-left">Bottom Left</div>
+      <div class="top-left">
+          <a href="https://google.com/">
+              <img src="discord-logo.png" style="width: 45px"/>
+        </a>
+      </div>
+      <div class="top-right">
+        <a href="main.html">
+              <button style="background-color: Transparent;
+              background-repeat:no-repeat;
+              border: none;
+              cursor:pointer;
+              overflow: hidden;
+              font-family: 'Fredoka One', cursive;
+              color: white;">Home</button>
+        </a>
+        <a href="main.html">
+            <button1 style="background-color: Transparent;
+              text-decoration:none;
+              background-repeat:no-repeat;
+              border: none;
+              cursor:pointer;
+              overflow: hidden;
+              font-family: 'Fredoka One', cursive;
+              color: white;">About</button1>
+        </a>
+
+        <a href="main.html">
+            <button2 style="background-color: Transparent;
+              text-decoration:none;
+              background-repeat:no-repeat;
+              border: none;
+              cursor:pointer;
+              overflow: hidden;
+              font-family: 'Fredoka One', cursive;
+              color: white;">Premium</button2>
+        </a>
+      </div>
+      <div class="bottom-right">Bottom Right</div>
+      <div class="centered">
+        <h1 data-text= "ApiCreate">
+            ApiCreate
+        </h1>
+      </div>
+    </div>
+
+</body>
+</html>
